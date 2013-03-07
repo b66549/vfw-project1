@@ -53,12 +53,28 @@
 					</li>
 					
 					<!-- Date element: Goal deadline -->
-					<li><label for="goaldeadline">Deadline Date:</label><input type="date" id="goaldeadline" /></li>
-				
+					<li><label for="deadline">Complete By:</label><input type="date" id="deadline" /></li>
+					
+					<!-- Range element: Goal importance -->
+					<li><label for="size">From 1-10 (1 being the smallest), how big is this goal?</label><input type="range" min="1" max="10" id="size" /></li>
+					
+					<!-- Text area element: Notes about the goal -->
+					<li><label for="details">Details:</label><textarea id="details"></textarea></li>
+					 
+					<!-- Checkbox element: Goal Completed -->
+					<li><label for="goalcomplete">Goal Achieved</label><input type="checkbox" value="Goal Achieved" id="goalcomplete" /></li>
 				</ul>
+				
+				<!-- Hidden data to submit -->
+				<input type="hidden" value="newgoal" />
 			</fieldset>
+			
+			<!-- Save the goal -->
+			<input type="submit" value="Save Goal" />
 		</form>
 		
-		
+		<!-- links to clear the stored data and to display the data -->
+		<a href="#">Clear Stored Data</a>
+		<a href="#">Display Data</a>
 	</body>
 </html>
